@@ -1,0 +1,728 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+:root {
+    --black1: #222;
+  }
+.content-dashboard{
+    height: 90vh;
+    text-align: center;
+}
+.members{    
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.modal{
+    position: absolute;
+    background-color: #00000042;
+    align-content: center;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display:none;
+
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.modal-content{
+    width: 80%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.title-modal{
+    text-align: left;
+    font-size: 20px;
+}
+.fullname{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: flex-start;
+    width: 100%;
+    
+}
+.form-icons1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px solid #999;
+    width:30%;
+}
+
+.fullname input{
+   
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    
+
+}
+input:disabled{
+    background-color: #8080800f;
+    border: none;
+}
+input{
+  
+    border-bottom: 1px solid var(--black1);
+}
+.images{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    height: 30vh;
+}
+
+.content-images img{
+    width: 25vh;
+    height: 25vh;
+    border-radius: 100%;
+    cursor:pointer;
+}
+.content-images img:hover{
+    border:1px solid red;
+}
+
+form button{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--black1);
+    width: 70%;
+    border: none;
+    letter-spacing: 2px;
+    
+   
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    animation-duration: 0.3s;
+    border-radius: 20px;
+}
+.seperate{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 10px;
+
+}
+form .on:hover{
+    background-color: #464343;
+    animation-duration: 0.3s;
+}
+form button:active{
+    background-color: #2c2b2b;
+    animation-duration: 0.3s;
+}
+#exit{
+    font-size: 30px;
+    position: absolute;
+    background: none;
+    border: none;
+    right: 25px;
+    cursor: pointer;
+    animation-duration: 0.3s;
+}
+
+.close:hover{
+    color: #00000082;
+    animation-duration: 0.3s;
+}
+#exit:hover{
+    color: #00000082;
+    animation-duration: 0.3s;
+}
+#exit1{
+    font-size: 30px;
+    position: absolute;
+    background: none;
+    border: none;
+    right: 25px;
+    cursor: pointer;
+    animation-duration: 0.3s;
+}
+
+#exit1:hover{
+    color: #00000082;
+    animation-duration: 0.3s;
+}
+.close{
+    font-size: 30px;
+    position: absolute;
+    background: none;
+    border: none;
+    right: 25px;
+    cursor: pointer;
+    animation-duration: 0.3s;
+}
+.close:hover{
+  
+    animation-duration: 0.3s;
+}
+.button-member{
+    display: flex
+    ;
+        align-items: center;
+        gap: 2px;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+.button-member button{
+    padding: 10px 15px;
+    background-color: var(--black1);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+td img{
+    width: 100px;
+    border-radius: 20px;
+    height: 100px;
+}
+.img1{
+    width: 50%;
+}
+.titles1{
+    display:block;
+}
+.status{
+    display:flex;
+}
+.form-status{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 5px;
+}
+.radio-status-form{
+    width: 100px;
+    display: flex
+;
+    justify-content: space-around;
+    align-items: center;
+}
+.radio-status-form input[type='radio']{
+    border:none;
+    
+    box-shadow:none;
+}
+.radio-status-form input[type='text']{
+    width: 100%;
+    border-bottom: 1px solid var(--black1);
+    padding: 10px;
+    border-radius: 0;
+}
+input[type='text']{
+    outline:none;
+}
+.moreradio{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.moreradio input{
+    border:none;
+    
+    box-shadow: none;
+}
+#modal-form-status{
+    width:25%;
+}
+tbody tr td:nth-child(5) {
+    cursor:pointer;
+}
+tbody tr td:nth-child(6) {
+    cursor:pointer;
+}
+tbody tr td:nth-child(7) {
+   color:gray;
+}
+
+
+
+tbody tr td:nth-child(5):hover {
+    color:white;
+
+}
+
+
+tbody tr td:nth-child(6):hover {
+    color:white;
+
+}
+tbody tr:hover{
+    color:white;
+}
+
+#modal-form-rent{
+    width: 20vw;
+    text-align: center;
+}
+#modal-form-register{
+    width: 20vw;
+    text-align: center;
+}
+#modal-form-register form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+.form-rent{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+#error-alert{
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    z-index: 1;
+}
+#error-alert1{
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+#error-alert2{
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    z-index: 1;
+}
+#searches{
+    display:none;
+}
+.more
+#customer-body{
+     display:none;
+}
+.admin{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#error{
+    width: 40vw;
+    padding: 20px;
+    color: whitesmoke;
+}
+#error1{
+    width: 40vw;
+    padding: 20px;
+    color: whitesmoke;
+}
+#error2{
+    width: 40vw;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.admin form{
+
+    height: 70vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.admin form input{
+    width: 100%;
+    padding: 5%;
+    outline: none;
+    border: none;
+}
+
+.admin form button{
+    padding:4%;
+}
+.title-dashboard{
+    margin: 20px;
+    font-size: 30px;
+}
+
+tbody tr td:nth-child(4){
+
+    cursor: pointer;
+}
+
+.dashboard-title{
+
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 450;
+}
+.admin-body{
+    height: 100vh;
+}
+.search input{
+    box-shadow:none;
+}
+button{
+    cursor:pointer;
+}
+
+input[type='select']:hover{
+    background-color: #00000082;
+}
+.fullname select{
+    background-color: white;
+    color: black;
+    outline: none;
+    border:none;
+   
+    width: 100%;
+    padding: 10px 15px;
+}
+.erros-alert{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin form button{
+    padding: 3%;
+    width: 100%;
+    outline: none;
+    letter-spacing: 3px;
+}
+.button-member{
+    padding: 8px 15px;
+    background-color: var(--black1);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.button-member select{
+    padding: 9px 15px;
+    background-color: var(--black1);
+    color: white;
+    border: none;
+    outline:none;
+    transition-duration: 0.2s;
+    border-radius: 0;
+    transition: all 0.5s ease; 
+}
+.button-member button{
+    border-radius:0;
+    padding: 10px 15px;
+    transition-duration: 0.2s;
+    transition: all 0.5s ease; 
+}
+.button-member button:hover{
+    border-bottom:1px solid red;
+    transition-duration: 0.5s;
+    transition: all 0.5s ease; 
+    
+}
+.button-member .log:hover{
+       transition: all 0.5s ease; 
+    border-bottom:1px solid red;
+    transition-duration: 0.5s;
+}
+.button-member button:hover{
+    transition: all 0.5s ease; 
+    background-color: #222;
+}
+
+#equipment-name{
+    display:none;
+}
+#addEquipmentForm{
+    
+    display: flex;
+    align-items: center;
+}
+#addEquipmentForm .radio-status-form{
+    width: 100%;
+    margin-top: 20px;
+}
+#renting-equipment{
+    width: 30%;
+}
+#equipmentList div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#equipmentList div button{
+    padding: 5px 20px;
+    border: none;
+    color: red;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#equipmentList div button:hover{
+color:#00000082;
+}
+#equipmentList{
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+#newEquipment{
+    border: none;
+    border-bottom: 1px solid var(--black1);
+}
+
+#modalconfirmation{
+    width: 30vw;
+}
+#modalconfirmation p{
+    
+    margin-bottom: 50px;
+}
+#modalconfirmation div button{
+    padding: 5px 20px;
+    color: white;
+    border: none;
+    box-shadow: 0 0 1px var(--black1);
+}
+#yes-btn{
+    
+    background-color: red;
+}
+#no-btn{ 
+    background-color: green;
+}
+#modalconfirmation div{
+    display: flex;
+    justify-content: space-around;
+}
+form input{
+    letter-spacing:1px;
+}
+form select{
+    letter-spacing:1px;
+}
+#no-results{
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    color: red;
+    height: 50%;
+    font-size: 20px;
+    align-content: center;
+}
+#addEquipmentForm button{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    width: 20%;
+    border: none;
+    box-shadow: none;
+    color: var(--black1);
+}
+
+sup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    color: red;
+}
+td{
+    position:relative;
+}
+.form-icons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px solid #999;
+}
+#modal-details-employee{
+    width:40%;
+}
+#editForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.form-icons2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px solid #999;
+    width:100%;
+}
+.form-icons2 input[type=text]{
+    padding: 10px 15px;
+    border: none;
+    width:100%;
+}
+#change1{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    top: 20px;
+    right: 0;
+    position: absolute;
+    padding: 0 5px;
+    color: #006a31;
+
+}
+#customer-body{
+    display:none;
+}
+
+#renteequipment{
+    font-size: 15px;
+
+}
+#renteequipment{
+    font-size: 15px;
+
+}
+#addmember{
+    font-size: 15px;
+
+}
+tbody tr:hover{
+    color:white
+}
+@media (max-width: 1270px) {
+    #modal-form-status{
+
+        width:30vw;
+    }
+    #modal-form-rent{
+        width:40vw;
+    }
+    #renting-equipment{
+        width: 40%;
+    }
+
+}
+@media (max-width: 850px) {
+    #modal-form-status{
+
+        width:40vw;
+    }
+    #modal-form-rent{
+        width:45vw;
+    }
+    #modal-form-register {
+    width: 50vw;
+    text-align: center;
+    }
+    #renting-equipment{
+        width: 40%;
+    }
+
+}
+@media(max-width:600px){
+    .members {
+        display: flex;
+        padding: 10px 0px;
+        gap: 20px;
+        align-items: center;
+        flex-direction: revert-layer;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 50vh;
+        overflow-x: scroll;
+    }
+    #modal-member .modal-body .modal-content{
+        width:100%;
+    }
+    .form-icons1{
+        width: 47%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .admin form{
+        width:70%;
+    }
+    #renting-equipment{
+        width: 70%;
+    }
+    .button-member{
+        width:100%;
+    }
+    #modal-form-status{
+
+        width:70vw;
+    }
+    #modal-form-rent{
+        width:45vw;
+    }
+    .fullname{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+    .fullname select {
+        width:100%;
+    }
+    .fullname input{
+        padding: 5%;
+        width:100%;
+        
+
+    }
+   .titles1 {
+      display:none;
+    }
+    .cardHeader{
+        display:flex;
+        justify-content: center;
+    }
+  }
+
+
