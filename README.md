@@ -22,6 +22,10 @@ Key Features
 
 🔑 Forgot Password (Admin) – Admin can recover account using a secure verification process.
 
+
+
 Technologies Used
+
 Frontend: HTML, CSS, JavaScript
+
 Backend: PHP, MySQL
